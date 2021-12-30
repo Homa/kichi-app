@@ -16,23 +16,23 @@ class Blockchain {
     }
 
     replaceChain = (newChain) => {
-        if(this.chain.length >= newChain.length) return;
+        if (this.chain.length >= newChain.length) return;
 
-        if(Blockchain.isValidChain(newChain)) {
+        if (Blockchain.isValidChain(newChain)) {
             this.chain = newChain;
         }
     }
 
     static isValidChain = (chain) => {
-        if(!isEqual(chain[0], Block.genesis())) return false;
+        if (!isEqual(chain[0], Block.genesis())) return false;
 
-        for(let i = 1, max = chain.length; i < max; i++) {
+        for (let i = 1, max = chain.length; i < max; i++) {
             const block = chain[i];
-            const actualLastHash = chain[i -1].hash;
+            const actualLastHash = chain[i - 1].hash;
             const {timestamp, lastHash, hash, data, difficulty, nonce} = block;
+            if (lastHash !== actualLastHash) return false;
 
-            if(lastHash !== actualLastHash) return false;
-            if(hash !== cryptoHash(timestamp, lastHash, data, difficulty, nonce)) return false;
+            if (hash !== cryptoHash(timestamp, lastHash, data, difficulty, nonce)) return false;
         }
         return true;
     }

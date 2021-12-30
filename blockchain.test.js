@@ -11,7 +11,7 @@ describe('Blockchain', () => {
     });
 
     it('has array of chains', () => {
-        expect(blockchain.chain instanceof Array).toBeTruthy;
+        expect(blockchain.chain instanceof Array).toBeTruthy();
     });
 
     it('starts with genesis block', () => {
@@ -75,9 +75,16 @@ describe('Blockchain', () => {
 
         describe('when the new chain is longer', () => {
             beforeEach(() => {
-                newChain.addBlock({data: 'one'});
-                newChain.addBlock({data: 'two'});
-                newChain.addBlock({data: 'three'});
+                newChain.addBlock({data: 'new one'});
+                newChain.addBlock({data: 'new two'});
+                newChain.addBlock({data: 'new three'});
+            });
+
+            describe('and chain is valid', () => {
+                it('replaces the chain', () => {
+                    blockchain.replaceChain(newChain.chain);
+                    expect(blockchain.chain).toEqual(newChain.chain);
+                });
             });
 
             describe('and chain is invalid', () => {
@@ -85,12 +92,6 @@ describe('Blockchain', () => {
                     newChain.chain[2].hash = 'a-hash';
                     blockchain.replaceChain(newChain.chain);
                     expect(blockchain.chain).toEqual(originalChain);
-                });
-            });
-            describe('and chain is valid', () => {
-                it('replaces the chain', () => {
-                    blockchain.replaceChain(newChain.chain);
-                    expect(blockchain.chain).toEqual(newChain.chain);
                 });
             });
         });
