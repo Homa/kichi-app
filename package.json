@@ -3,17 +3,25 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --experimental-vm-modules node_modules/.bin/jest"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Homa/kichi-app.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Homa",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Homa/kichi-app/issues"
   },
-  "homepage": "https://github.com/Homa/kichi-app#readme"
+  "homepage": "https://github.com/Homa/kichi-app#readme",
+  "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "jest": "^27.4.5"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
