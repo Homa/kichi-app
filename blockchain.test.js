@@ -40,7 +40,7 @@ describe('Blockchain', () => {
                 blockchain.addBlock({data: 'three'});
             });
 
-            describe('and a lastHash refrence has changed', () => {
+            describe('and a lastHash reference has changed', () => {
                 it('returns false', () => {
                     blockchain.chain[2].lastHash = 'fake-last-hash';
                     expect(Blockchain.isValidChain(blockchain.chain)).toBe(false);
