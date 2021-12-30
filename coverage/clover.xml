@@ -1,56 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1640831004438" clover="3.2.0">
-  <project timestamp="1640831004438" name="All files">
-    <metrics statements="38" coveredstatements="38" conditionals="10" coveredconditionals="10" methods="8" coveredmethods="8" elements="56" coveredelements="56" complexity="0" loc="38" ncloc="38" packages="1" files="4" classes="4"/>
+<coverage generated="1640851401841" clover="3.2.0">
+  <project timestamp="1640851401841" name="All files">
+    <metrics statements="46" coveredstatements="45" conditionals="12" coveredconditionals="11" methods="9" coveredmethods="9" elements="67" coveredelements="65" complexity="0" loc="46" ncloc="46" packages="1" files="4" classes="4"/>
     <file name="block.js" path="/Users/homa/kichi-app/block.js">
-      <metrics statements="16" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
-      <line num="6" count="47" type="stmt"/>
-      <line num="7" count="47" type="stmt"/>
-      <line num="8" count="47" type="stmt"/>
-      <line num="9" count="47" type="stmt"/>
-      <line num="10" count="47" type="stmt"/>
-      <line num="11" count="47" type="stmt"/>
-      <line num="14" count="29" type="stmt"/>
-      <line num="16" count="2" type="stmt"/>
-      <line num="19" count="17" type="stmt"/>
-      <line num="20" count="17" type="stmt"/>
-      <line num="21" count="17" type="stmt"/>
-      <line num="23" count="17" type="stmt"/>
-      <line num="24" count="71493" type="stmt"/>
-      <line num="25" count="71493" type="stmt"/>
-      <line num="26" count="71493" type="stmt"/>
-      <line num="29" count="17" type="stmt"/>
+      <metrics statements="19" coveredstatements="19" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
+      <line num="7" count="41" type="stmt"/>
+      <line num="8" count="41" type="stmt"/>
+      <line num="9" count="41" type="stmt"/>
+      <line num="10" count="41" type="stmt"/>
+      <line num="11" count="41" type="stmt"/>
+      <line num="12" count="41" type="stmt"/>
+      <line num="15" count="26" type="stmt"/>
+      <line num="17" count="2" type="stmt"/>
+      <line num="18" count="14" type="stmt"/>
+      <line num="19" count="14" type="stmt"/>
+      <line num="21" count="14" type="stmt"/>
+      <line num="22" count="109" type="stmt"/>
+      <line num="23" count="109" type="stmt"/>
+      <line num="25" count="109" type="stmt"/>
+      <line num="26" count="109" type="stmt"/>
+      <line num="29" count="14" type="stmt"/>
+      <line num="39" count="2" type="stmt"/>
+      <line num="40" count="111" type="stmt"/>
+      <line num="41" count="111" type="cond" truecount="2" falsecount="0"/>
     </file>
     <file name="blockchain.js" path="/Users/homa/kichi-app/blockchain.js">
-      <metrics statements="17" coveredstatements="17" conditionals="10" coveredconditionals="10" methods="4" coveredmethods="4"/>
-      <line num="7" count="20" type="stmt"/>
-      <line num="10" count="20" type="stmt"/>
-      <line num="11" count="16" type="stmt"/>
-      <line num="15" count="16" type="stmt"/>
-      <line num="18" count="20" type="stmt"/>
-      <line num="19" count="3" type="cond" truecount="2" falsecount="0"/>
-      <line num="21" count="2" type="cond" truecount="2" falsecount="0"/>
+      <metrics statements="21" coveredstatements="20" conditionals="10" coveredconditionals="9" methods="4" coveredmethods="4"/>
+      <line num="7" count="18" type="stmt"/>
+      <line num="10" count="18" type="stmt"/>
+      <line num="11" count="13" type="stmt"/>
+      <line num="15" count="13" type="stmt"/>
+      <line num="18" count="18" type="stmt"/>
+      <line num="19" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="21" count="1" type="cond" truecount="1" falsecount="1"/>
       <line num="22" count="1" type="stmt"/>
-      <line num="26" count="1" type="stmt"/>
-      <line num="27" count="6" type="cond" truecount="2" falsecount="0"/>
-      <line num="29" count="5" type="stmt"/>
-      <line num="30" count="12" type="stmt"/>
-      <line num="31" count="12" type="stmt"/>
-      <line num="32" count="12" type="stmt"/>
-      <line num="34" count="12" type="cond" truecount="2" falsecount="0"/>
-      <line num="35" count="11" type="cond" truecount="2" falsecount="0"/>
-      <line num="37" count="2" type="stmt"/>
+      <line num="23" count="1" type="stmt"/>
+      <line num="25" count="0" type="stmt"/>
+      <line num="29" count="1" type="stmt"/>
+      <line num="30" count="5" type="cond" truecount="2" falsecount="0"/>
+      <line num="32" count="4" type="stmt"/>
+      <line num="33" count="10" type="stmt"/>
+      <line num="34" count="10" type="stmt"/>
+      <line num="35" count="10" type="stmt"/>
+      <line num="36" count="10" type="stmt"/>
+      <line num="37" count="10" type="cond" truecount="2" falsecount="0"/>
+      <line num="39" count="9" type="cond" truecount="2" falsecount="0"/>
+      <line num="40" count="8" type="stmt"/>
+      <line num="42" count="2" type="stmt"/>
     </file>
     <file name="config.js" path="/Users/homa/kichi-app/config.js">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <line num="1" count="2" type="stmt"/>
-      <line num="3" count="2" type="stmt"/>
+      <line num="4" count="2" type="stmt"/>
+      <line num="6" count="2" type="stmt"/>
     </file>
     <file name="crypto-hash.js" path="/Users/homa/kichi-app/crypto-hash.js">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="4" count="71508" type="stmt"/>
-      <line num="5" count="71508" type="stmt"/>
-      <line num="6" count="71508" type="stmt"/>
+      <line num="4" count="122" type="stmt"/>
+      <line num="5" count="122" type="stmt"/>
+      <line num="6" count="122" type="stmt"/>
     </file>
   </project>
 </coverage>
