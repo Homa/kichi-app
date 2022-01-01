@@ -1,5 +1,5 @@
 import Block from './block';
-import cryptoHash from './crypto-hash';
+import cryptoHash from '../util/crypto-hash';
 import isEqual from 'lodash/isEqual';
 
 class Blockchain {
