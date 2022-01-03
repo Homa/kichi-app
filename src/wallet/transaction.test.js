@@ -1,4 +1,4 @@
-import { verifySignature } from '../util/ec';
+import { verifySignature } from '../util';
 import Wallet from './index';
 import Transaction from './transaction';
 

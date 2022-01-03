@@ -1,5 +1,5 @@
 import elliptic from 'elliptic';
-import cryptoHash from './crypto-hash';
+import { cryptoHash } from './crypto-hash';
 
 const EC = elliptic.ec;
 const ec = new EC('secp256k1');

@@ -1,5 +1,5 @@
 import Wallet from './index';
-import { verifySignature } from '../util/ec';
+import { verifySignature } from '../util';
  
 describe('Wallet', () => {
     let wallet;

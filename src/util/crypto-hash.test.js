@@ -1,4 +1,4 @@
-import cryptoHash from './crypto-hash';
+import { cryptoHash } from './crypto-hash';
 
 describe('cryptoHash', () => {
     it('generats correct hash for `foo`', () => {

@@ -1,6 +1,6 @@
 import Block from './block';
 import Blockchain from './index';
-import cryptoHash from '../util/crypto-hash';
+import { cryptoHash } from '../util';
 
 describe('Blockchain', () => {
     let blockchain, newChain, originalChain;

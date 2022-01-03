@@ -6,4 +6,4 @@ function cryptoHash (...inputs) {
     return hash.digest('hex');
 }
 
-export default cryptoHash;
+export { cryptoHash };
