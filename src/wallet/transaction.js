@@ -3,7 +3,7 @@ import { verifySignature } from '../util';
 
 class Transaction {
     constructor({senderWallet, recipient, amount}) {
-        this.id = v1;
+        this.id = v1();
         this.outputMap = this.createOutputMap({senderWallet, recipient, amount});
         this.input = this.createInput({senderWallet, outputMap: this.outputMap })
     }
